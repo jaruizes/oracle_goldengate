@@ -1,0 +1,10 @@
+EC2: datos de usuario
+- sudo yum install -y unzip
+- sudo yum install java-1.8.0-openjdk-devel -y
+- sudo yum install -y libnsl
+
+SWAP
+sudo dd if=/dev/zero of=/root/swapfile bs=1M count=1024
+sudo chmod 600 /root/swapfile
+sudo mkswap /root/swapfile
+sudo swapon /root/swapfile
